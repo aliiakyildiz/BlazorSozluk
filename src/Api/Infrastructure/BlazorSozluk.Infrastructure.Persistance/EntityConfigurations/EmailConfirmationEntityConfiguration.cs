@@ -15,7 +15,7 @@ namespace BlazorSozluk.Infrastructure.Persistance.EntityConfigurations
         public override void Configure(EntityTypeBuilder<EmailConfirmation> builder)
         {
             base.Configure(builder);
-            builder.ToTable("entrycomment", BlazorSozlukContext.DEFAULT_SCHEMA);
+            builder.ToTable("emailconfirmation", BlazorSozlukContext.DEFAULT_SCHEMA);
 
         }
     }

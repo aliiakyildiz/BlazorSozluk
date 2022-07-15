@@ -15,7 +15,7 @@ namespace BlazorSozluk.Infrastructure.Persistance.EntityConfigurations
         public override void Configure(EntityTypeBuilder<User> builder)
         {
             base.Configure(builder);
-            builder.ToTable("entrycomment", BlazorSozlukContext.DEFAULT_SCHEMA);
+            builder.ToTable("user", BlazorSozlukContext.DEFAULT_SCHEMA);
 
         }
     }

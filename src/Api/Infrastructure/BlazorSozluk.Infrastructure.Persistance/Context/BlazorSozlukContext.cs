@@ -13,6 +13,10 @@ namespace BlazorSozluk.Infrastructure.Persistance.Context
     {
         public const string DEFAULT_SCHEMA = "dbo";
 
+        public BlazorSozlukContext()
+        {
+
+        }
         public BlazorSozlukContext(DbContextOptions options) : base(options)
         {
         }
@@ -25,7 +29,17 @@ namespace BlazorSozluk.Infrastructure.Persistance.Context
         public DbSet<EntryCommentVote> EntryCommentVotes { get; set; }
         public DbSet<EntryCommentFavorite> EntryCommentFavorites { get; set; }
         public DbSet<EmailConfirmation> EmailConfirmations { get; set; }
-
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                var connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Database=BlazorSozluk;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                optionsBuilder.UseSqlServer(connectionString, opt =>
+                {
+                    opt.EnableRetryOnFailure();
+                });
+            }
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

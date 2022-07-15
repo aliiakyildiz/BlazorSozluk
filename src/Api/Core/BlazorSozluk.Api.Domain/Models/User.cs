@@ -13,7 +13,7 @@ namespace BlazorSozluk.Api.Domain.Models
         public string EmailAdress { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string EmailConfrimed { get; set; }
+        public bool EmailConfrimed { get; set; }
 
         public virtual ICollection<Entry> Entries { get; set; }
         public virtual ICollection<EntryFavorite> EntryFavorites { get; set; }
