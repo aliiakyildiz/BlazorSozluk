@@ -1,4 +1,6 @@
-﻿using BlazorSozluk.Infrastructure.Persistance.Context;
+﻿using BlazorSozluk.Api.Application.Interfaces.Repositories;
+using BlazorSozluk.Infrastructure.Persistance.Context;
+using BlazorSozluk.Infrastructure.Persistance.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +27,11 @@ namespace BlazorSozluk.Infrastructure.Persistance.Extensions
 
             //var seedData = new SeedData();
             //seedData.SeedAsync(configuration).GetAwaiter().GetResult();
+
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IEmailComfirmationRepository, EmailComfirmationRepository>();
+            services.AddScoped<IEntryRepository, EntryRepository>();
+            services.AddScoped<IEntryCommentRepository, EntryCommentRepository>();
             return services;
         }
     }
