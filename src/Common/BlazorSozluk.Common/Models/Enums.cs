@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Common.ViewModels
+namespace BlazorSozluk.Common.Models
 {
-    public enum VoteType
+    public enum Enums
     {
         None=-1,
         DownVote=0,

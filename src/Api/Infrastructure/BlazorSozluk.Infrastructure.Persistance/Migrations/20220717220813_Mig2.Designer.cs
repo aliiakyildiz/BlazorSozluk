@@ -4,6 +4,7 @@ using BlazorSozluk.Infrastructure.Persistance.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorSozluk.Infrastructure.Persistance.Migrations
 {
     [DbContext(typeof(BlazorSozlukContext))]
-    partial class BlazorSozlukContextModelSnapshot : ModelSnapshot
+    [Migration("20220717220813_Mig2")]
+    partial class Mig2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

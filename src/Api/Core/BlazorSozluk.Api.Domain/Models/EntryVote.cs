@@ -1,4 +1,4 @@
-﻿using BlazorSozluk.Common.ViewModels;
+﻿using BlazorSozluk.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace BlazorSozluk.Api.Domain.Models
     public class EntryVote : BaseEntity
     {
         public Guid EntryId { get; set; }
-        public VoteType VoteType { get; set; }
+        public Enums VoteType { get; set; }
         public Guid CreatedById { get; set; }
 
         public virtual Entry Entry { get; set; }
