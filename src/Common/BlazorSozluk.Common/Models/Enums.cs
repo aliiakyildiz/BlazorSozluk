@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlazorSozluk.Common.Models
 {
-    public enum Enums
+    public enum VoteType
     {
         None=-1,
         DownVote=0,

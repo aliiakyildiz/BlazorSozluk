@@ -12,12 +12,12 @@ namespace BlazorSozluk.Common.Infrastructure
     public static class QueueFactory
     {
         public static void SendMessageToExchange(string exchangeName,
-                                       string exchanceType,
+                                       string exchangeType,
                                        string queueName,
                                        object obj)
         {
             var channel = CreateBasicConsumer()
-                .EnsureExchange(exchangeName, exchanceType)
+                .EnsureExchange(exchangeName, exchangeType)
                 .EnsureQueue(queueName, exchangeName)
                 .Model;
 

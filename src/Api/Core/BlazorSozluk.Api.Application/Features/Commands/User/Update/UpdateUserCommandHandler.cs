@@ -48,7 +48,7 @@ namespace BlazorSozluk.Api.Application.Features.Commands.User.Update
                 };
                 QueueFactory.SendMessageToExchange(
                     exchangeName: SozlukConstants.UserExchanceName,
-                    exchanceType: SozlukConstants.DefaultExchanceType,
+                    exchangeType: SozlukConstants.DefaultExchanceType,
                     queueName: SozlukConstants.UserEmailChangedQueueName,
                     obj: @event);
 
