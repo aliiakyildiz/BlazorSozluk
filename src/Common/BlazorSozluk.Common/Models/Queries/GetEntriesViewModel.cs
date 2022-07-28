@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace BlazorSozluk.Common.ViewModels.Queries
 {
-    public class LoginUserViewModel
+    public class GetEntriesViewModel
     {
         public Guid Id { get; set; }
-
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string UserName { get; set; }
-
-        public string Token { get; set; }
+        public string Subject { get; set; }
+        public int CommentCount { get; set; }
     }
 }

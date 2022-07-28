@@ -1,4 +1,4 @@
-﻿using BlazorSozluk.Common.Models.RequstModels;
+﻿using BlazorSozluk.Common.ViewModels.RequstModels;
 using FluentValidation;
 using System;
 using System.Collections.Generic;

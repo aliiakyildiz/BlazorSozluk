@@ -2,8 +2,8 @@
 using BlazorSozluk.Api.Application.Interfaces.Repositories;
 using BlazorSozluk.Common.Infrastructure;
 using BlazorSozluk.Common.Infrastructure.Exceptions;
-using BlazorSozluk.Common.Models.Queries;
-using BlazorSozluk.Common.Models.RequstModels;
+using BlazorSozluk.Common.ViewModels.Queries;
+using BlazorSozluk.Common.ViewModels.RequstModels;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;

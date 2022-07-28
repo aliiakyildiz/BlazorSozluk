@@ -1,6 +1,6 @@
 ﻿using BlazorSozluk.Api.Application.Features.Commands.User.ConfirmEmail;
 using BlazorSozluk.Common.Events.User;
-using BlazorSozluk.Common.Models.RequstModels;
+using BlazorSozluk.Common.ViewModels.RequstModels;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

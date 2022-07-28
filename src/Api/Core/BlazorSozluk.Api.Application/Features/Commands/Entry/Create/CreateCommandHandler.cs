@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using BlazorSozluk.Api.Application.Interfaces.Repositories;
-using BlazorSozluk.Common.Models.RequstModels;
+using BlazorSozluk.Common.ViewModels.RequstModels;
 using MediatR;
 using System;
 using System.Collections.Generic;

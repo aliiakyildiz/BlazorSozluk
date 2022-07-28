@@ -4,7 +4,7 @@ using BlazorSozluk.Common;
 using BlazorSozluk.Common.Events.User;
 using BlazorSozluk.Common.Infrastructure;
 using BlazorSozluk.Common.Infrastructure.Exceptions;
-using BlazorSozluk.Common.Models.RequstModels;
+using BlazorSozluk.Common.ViewModels.RequstModels;
 using MediatR;
 using System;
 using System.Collections.Generic;

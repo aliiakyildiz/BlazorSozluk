@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Common.Models.RequstModels
+namespace BlazorSozluk.Common.ViewModels.RequstModels
 {
     public class CreateEntryCommand:IRequest<Guid>
     {

@@ -1,7 +1,7 @@
 ﻿using BlazorSozluk.Common;
 using BlazorSozluk.Common.Events.EntryComment;
 using BlazorSozluk.Common.Infrastructure;
-using BlazorSozluk.Common.Models.RequstModels;
+using BlazorSozluk.Common.ViewModels.RequstModels;
 using MediatR;
 using System;
 using System.Collections.Generic;

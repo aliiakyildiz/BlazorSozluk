@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Common.Models
+namespace BlazorSozluk.Common.ViewModels
 {
     public enum VoteType
     {

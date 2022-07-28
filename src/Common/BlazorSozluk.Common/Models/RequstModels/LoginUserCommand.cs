@@ -1,4 +1,4 @@
-﻿using BlazorSozluk.Common.Models.Queries;
+﻿using BlazorSozluk.Common.ViewModels.Queries;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Common.Models.RequstModels
+namespace BlazorSozluk.Common.ViewModels.RequstModels
 {
     public class LoginUserCommand:IRequest<LoginUserViewModel>
     {
